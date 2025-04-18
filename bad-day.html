@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bad Day Comfort</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 60px;
+      background-color: #fce2f7;
+    }
+
+    .bear {
+      width: 150px;
+      height: 150px;
+      background-color: #f8b400;
+      border-radius: 50%;
+      position: relative;
+      margin: 30px auto;
+      animation: bearJump 2s ease-in-out infinite;
+    }
+
+    .bear:before {
+      content: '';
+      position: absolute;
+      top: -25px;
+      left: 30px;
+      width: 40px;
+      height: 40px;
+      background-color: #f8b400;
+      border-radius: 50%;
+    }
+
+    .bear:after {
+      content: '';
+      position: absolute;
+      top: -25px;
+      right: 30px;
+      width: 40px;
+      height: 40px;
+      background-color: #f8b400;
+      border-radius: 50%;
+    }
+
+    .bear .ear-left, .bear .ear-right {
+      background-color: #b77f00;
+    }
+
+    .heart {
+      font-size: 100px;
+      color: #ff69b4;
+      animation: heartBeat 1s infinite;
+    }
+
+    .message {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #333;
+      animation: fadeInMessage 2s ease;
+    }
+
+    @keyframes heartBeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes bearJump {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeInMessage {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bear"></div>
+  <div class="heart">💖</div>
+  <div class="message">
+    Oh no, it sounds like it was a tough day! 😔<br>
+    But remember, you are so loved and strong. 💪<br>
+    Just like this little bear, you’ll get through this.<br>
+    Take a deep breath, and let’s rest together. 💕
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Day Celebration</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 60px;
+      background-color: #ffe0e0;
+    }
+
+    .strawberry {
+      width: 120px;
+      height: 120px;
+      background-color: #ff6347;
+      border-radius: 50%;
+      position: relative;
+      margin: 30px auto;
+      animation: strawberryBounce 1.5s ease-in-out infinite;
+    }
+
+    .strawberry:before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 30px;
+      width: 20px;
+      height: 20px;
+      background-color: #228b22;
+      border-radius: 50%;
+    }
+
+    .strawberry:after {
+      content: '';
+      position: absolute;
+      top: -20px;
+      right: 30px;
+      width: 20px;
+      height: 20px;
+      background-color: #228b22;
+      border-radius: 50%;
+    }
+
+    .heart {
+      font-size: 100px;
+      color: #ff1493;
+      animation: heartPulse 1s infinite;
+    }
+
+    .message {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #333;
+      animation: fadeInMessage 2s ease;
+    }
+
+    @keyframes strawberryBounce {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes heartPulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeInMessage {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="strawberry"></div>
+  <div class="heart">💖</div>
+  <div class="message">
+    Yay, I’m so glad to hear your day was amazing! 🥳<br>
+    You’re the brightest star in my sky! 🌟<br>
+    Just like this strawberry, you make everything sweeter! 🍓<br>
+    Let’s celebrate your awesomeness together! 🎉
+  </div>
+</body>
+</html>
